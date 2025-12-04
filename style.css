@@ -15,10 +15,15 @@ body{
 
 .sidebar{
   grid-area: 1 / 1 / 2 / 2;
-  background-color:steelblue;
+  background-color:rgb(52, 139, 211);
   height:100vh;
   margin:0;
   padding:0;
+  display:grid;
+  color:white;
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-columns: 10% 90%;
+  font-size:1.5rem;
 }
 
 header{
@@ -30,4 +35,50 @@ header{
   grid-area:2 / 2 / 2 / 2;
   background-color:chartreuse;
 }
+ul{
+    padding:0;
+}
+
+.linksCol1 > li,
+.linksCol2 > li{
+  list-style: none;
+}
+
+.linksCol1 > li > img,
+.linksCol2 > li > img,
+.logo > img{
+  padding-right:10px;
+  color:inherit;
+}
+
+.sidebar a, 
+.sidebar a:visited{
+  color:white;
+  text-decoration:none;
+}
+
+.sidebar a:hover{
+  font-size:1.7rem;
+}
+
+.linksCol1{
+  display:grid;
+  gap:10px;
+  grid-area:2 / 2 / 2 / 2
+}
+.linksCol2{
+  display:grid;
+  max-height:150px;
+  grid-area: 3 / 2 / 3 / 2
+}
+
+.logo{
+  /* align-items:center;
+  padding-left:40px; */
+  grid-area: 1 / 2 / 1 / 2;
+  font-size:2rem;
+  margin-top:20px;
+}
+
+
 
