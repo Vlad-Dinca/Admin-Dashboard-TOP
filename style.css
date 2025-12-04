@@ -26,11 +26,6 @@ body{
   font-size:1.5rem;
 }
 
-header{
-  grid-area:1 / 2 / 1 / 2;
-  background-color:yellow;
-}
-
 .main-content{
   grid-area:2 / 2 / 2 / 2;
   background-color:chartreuse;
@@ -80,5 +75,84 @@ ul{
   margin-top:20px;
 }
 
+header{
+  grid-area:1 / 2 / 1 / 2;
+  background-color:white;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 70% 30%;
+  font-size:2rem;
+  font-weight:600;
+  row-gap:20%;
+}
+
+.userInfo > img,
+.welcomeMessage > img{
+  width:50px;
+  height:auto;
+  /* margin-top:10px; */
+}
+
+.searchBar > input{
+  width:80%;
+  height:50%;
+  border-radius:10px;
+  background-color:rgb(235, 232, 232);
+  border-style:none;
+}
+.searchBar > img{
+  width:40px;
+  height:30px;
+}
+
+.searchBar, .welcomeMessage{
+  margin-left:10%;
+}
+
+.buttonsHeader{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items:center;
+}
+.buttonsHeader > button{
+  color:white;
+  background-color:rgb(52, 139, 211);
+  width:100px;
+  height:30px;
+  border-radius:10px;
+  font-size:1.1rem;
+  outline:none;
+  border-style:none;
+  align-items:center;
+}
+.welcomeMessage{
+  display:grid;
+  grid-template-rows:30% 70%;
+  grid-template-columns: 10% 90%;
+  column-gap:15px;
+}
+.welcomeMessage > img{
+  width:70px;
+  grid-area: 1 / 1 / 2 / 1;
+}
+
+.welcomeMessage div:nth-child(3){
+  grid-area: 2 / 2 / 2 / 2;
+}
+.welcomeMessage div:nth-child(2){
+  font-size:1rem;
+  margin-top:10px;
+}
+
+.userInfo{
+  font-size:1.4rem;
+  display:grid;
+  grid-template-columns: 20% 20% 40%;
+  align-items:center;
+}
+.userInfo > img:nth-child(1){
+  width:30px;
+}
 
 
