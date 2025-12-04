@@ -118,8 +118,8 @@ header{
 .buttonsHeader > button{
   color:white;
   background-color:rgb(52, 139, 211);
-  width:100px;
-  height:30px;
+  width:90%;
+  height:80%;
   border-radius:10px;
   font-size:1.1rem;
   outline:none;
@@ -128,13 +128,14 @@ header{
 }
 .welcomeMessage{
   display:grid;
-  grid-template-rows:30% 70%;
+  grid-template-rows:10% 70%;
   grid-template-columns: 10% 90%;
-  column-gap:15px;
+  /* column-gap:15px; */
+  align-items:center;
 }
 .welcomeMessage > img{
-  width:70px;
-  grid-area: 1 / 1 / 2 / 1;
+  width:80%;
+  grid-area: 2 / 1 / 2 / 2;
 }
 
 .welcomeMessage div:nth-child(3){
@@ -142,7 +143,8 @@ header{
 }
 .welcomeMessage div:nth-child(2){
   font-size:1rem;
-  margin-top:10px;
+  grid-area: 1 / 2 / 1 / 2
+  /* margin-top:10px; */
 }
 
 .userInfo{
@@ -152,7 +154,10 @@ header{
   align-items:center;
 }
 .userInfo > img:nth-child(1){
-  width:30px;
+  width:45%;
+}
+.userInfo > img:nth-child(2){
+  width:70%;
 }
 
 
